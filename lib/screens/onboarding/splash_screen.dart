@@ -6,8 +6,10 @@ import 'package:legai/screens/home/home_screen.dart';
 import 'package:legai/screens/onboarding/login_screen.dart';
 
 class SplashScreen extends StatefulWidget {
+  const SplashScreen({super.key});
+
   @override
-  _SplashScreenState createState() => _SplashScreenState();
+  State<SplashScreen> createState() => _SplashScreenState();
 }
 
 class _SplashScreenState extends State<SplashScreen> {
@@ -22,6 +24,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
     final prefs = await SharedPreferences.getInstance();
     final isFirstTime = prefs.getBool('isFirstTime') ?? true;
+    if (!mounted) return;
 
     // Get the Supabase client instance
     final supabase = Supabase.instance.client;

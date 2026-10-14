@@ -17,7 +17,7 @@ Future<void> main() async {
     throw Exception("Missing SUPABASE_URL or SUPABASE_ANON_KEY in .env");
   }
 
-  await Supabase.initialize(url: supabaseUrl, anonKey: supabaseAnonKey);
+  await Supabase.initialize(url: supabaseUrl, publishableKey: supabaseAnonKey);
 
   runApp(const MyApp());
 }
