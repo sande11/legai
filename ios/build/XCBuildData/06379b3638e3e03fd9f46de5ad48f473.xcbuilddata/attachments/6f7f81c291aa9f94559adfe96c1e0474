@@ -1,0 +1,4 @@
+
+module stt_record.Swift {
+  header "stt_record-Swift.h"
+}

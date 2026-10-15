@@ -1,0 +1,31 @@
+{
+  "" : {
+    "const-values" : "/Users/kelvinsande/Documents/SandeTechnologies/legai/ios/build/Pods.build/Release-iphoneos/flutter_tts.build/Objects-normal/arm64/flutter_tts-primary.swiftconstvalues",
+    "dependencies" : "/Users/kelvinsande/Documents/SandeTechnologies/legai/ios/build/Pods.build/Release-iphoneos/flutter_tts.build/Objects-normal/arm64/flutter_tts-primary.d",
+    "diagnostics" : "/Users/kelvinsande/Documents/SandeTechnologies/legai/ios/build/Pods.build/Release-iphoneos/flutter_tts.build/Objects-normal/arm64/flutter_tts-primary.dia",
+    "emit-module-dependencies" : "/Users/kelvinsande/Documents/SandeTechnologies/legai/ios/build/Pods.build/Release-iphoneos/flutter_tts.build/Objects-normal/arm64/flutter_tts-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/kelvinsande/Documents/SandeTechnologies/legai/ios/build/Pods.build/Release-iphoneos/flutter_tts.build/Objects-normal/arm64/flutter_tts-primary-emit-module.dia",
+    "pch" : "/Users/kelvinsande/Documents/SandeTechnologies/legai/ios/build/Pods.build/Release-iphoneos/flutter_tts.build/Objects-normal/arm64/flutter_tts-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/kelvinsande/Documents/SandeTechnologies/legai/ios/build/Pods.build/Release-iphoneos/flutter_tts.build/Objects-normal/arm64/flutter_tts-primary.swiftdeps"
+  },
+  "/Users/kelvinsande/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/ios/Classes/AudioCategory.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/flutter_tts.build/Objects-normal/arm64/AudioCategory.o",
+    "llvm-bc" : "/Users/kelvinsande/Documents/SandeTechnologies/legai/ios/build/Pods.build/Release-iphoneos/flutter_tts.build/Objects-normal/arm64/AudioCategory.bc",
+    "object" : "/Users/kelvinsande/Documents/SandeTechnologies/legai/ios/build/Pods.build/Release-iphoneos/flutter_tts.build/Objects-normal/arm64/AudioCategory.o"
+  },
+  "/Users/kelvinsande/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/ios/Classes/AudioCategoryOptions.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/flutter_tts.build/Objects-normal/arm64/AudioCategoryOptions.o",
+    "llvm-bc" : "/Users/kelvinsande/Documents/SandeTechnologies/legai/ios/build/Pods.build/Release-iphoneos/flutter_tts.build/Objects-normal/arm64/AudioCategoryOptions.bc",
+    "object" : "/Users/kelvinsande/Documents/SandeTechnologies/legai/ios/build/Pods.build/Release-iphoneos/flutter_tts.build/Objects-normal/arm64/AudioCategoryOptions.o"
+  },
+  "/Users/kelvinsande/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/ios/Classes/AudioModes.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/flutter_tts.build/Objects-normal/arm64/AudioModes.o",
+    "llvm-bc" : "/Users/kelvinsande/Documents/SandeTechnologies/legai/ios/build/Pods.build/Release-iphoneos/flutter_tts.build/Objects-normal/arm64/AudioModes.bc",
+    "object" : "/Users/kelvinsande/Documents/SandeTechnologies/legai/ios/build/Pods.build/Release-iphoneos/flutter_tts.build/Objects-normal/arm64/AudioModes.o"
+  },
+  "/Users/kelvinsande/.pub-cache/hosted/pub.dev/flutter_tts-4.2.5/ios/Classes/SwiftFlutterTtsPlugin.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/flutter_tts.build/Objects-normal/arm64/SwiftFlutterTtsPlugin.o",
+    "llvm-bc" : "/Users/kelvinsande/Documents/SandeTechnologies/legai/ios/build/Pods.build/Release-iphoneos/flutter_tts.build/Objects-normal/arm64/SwiftFlutterTtsPlugin.bc",
+    "object" : "/Users/kelvinsande/Documents/SandeTechnologies/legai/ios/build/Pods.build/Release-iphoneos/flutter_tts.build/Objects-normal/arm64/SwiftFlutterTtsPlugin.o"
+  }
+}

@@ -1,4 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Supabase sign-in (release builds need this declared). -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Talk and Listen In. -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- Recognise speech through a Bluetooth headset microphone. -->
+    <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
     <application
         android:label="legai"
         android:name="${applicationName}"
@@ -40,6 +47,13 @@
         <intent>
             <action android:name="android.intent.action.PROCESS_TEXT"/>
             <data android:mimeType="text/plain"/>
+        </intent>
+        <!-- On-device speech recognition and text to speech (Android 11+). -->
+        <intent>
+            <action android:name="android.speech.RecognitionService" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
         </intent>
     </queries>
 </manifest>

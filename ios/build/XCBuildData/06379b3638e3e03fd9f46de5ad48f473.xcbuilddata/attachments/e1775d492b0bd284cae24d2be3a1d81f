@@ -1,0 +1,5 @@
+ extern const unsigned char stt_recordVersionString[];
+ extern const double stt_recordVersionNumber;
+
+ const unsigned char stt_recordVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:stt_record  PROJECT:Pods-1" "\n";
+ const double stt_recordVersionNumber __attribute__ ((used)) = (double)1.;

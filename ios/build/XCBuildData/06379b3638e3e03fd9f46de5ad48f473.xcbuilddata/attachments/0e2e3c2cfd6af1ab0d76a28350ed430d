@@ -1,0 +1,23 @@
+{
+  "version": 0,
+  "use-external-names": false,
+  "case-sensitive": false,
+  "roots": [{
+    "type": "directory",
+    "name": "/Users/kelvinsande/Documents/SandeTechnologies/legai/ios/build/Release-iphoneos/stt_record/stt_record.framework/Modules",
+    "contents": [{
+      "type": "file",
+      "name": "module.modulemap",
+      "external-contents": "/Users/kelvinsande/Documents/SandeTechnologies/legai/ios/build/Pods.build/Release-iphoneos/stt_record.build/unextended-module.modulemap",
+    }]
+    },
+    {
+    "type": "directory",
+    "name": "/Users/kelvinsande/Documents/SandeTechnologies/legai/ios/build/Release-iphoneos/stt_record/stt_record.framework/Headers",
+    "contents": [{
+      "type": "file",
+      "name": "stt_record-Swift.h",
+      "external-contents": "/Users/kelvinsande/Documents/SandeTechnologies/legai/ios/build/Pods.build/Release-iphoneos/stt_record.build/unextended-interface-header.h",
+    }]
+  }]
+}

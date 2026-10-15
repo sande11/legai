@@ -1,0 +1,4 @@
+
+module stt_record.__Swift {
+  exclude header "stt_record-Swift.h"
+}

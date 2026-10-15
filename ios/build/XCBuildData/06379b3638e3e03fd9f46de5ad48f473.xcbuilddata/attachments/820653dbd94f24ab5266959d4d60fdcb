@@ -1,0 +1,16 @@
+{
+  "" : {
+    "const-values" : "/Users/kelvinsande/Documents/SandeTechnologies/legai/ios/build/Pods.build/Release-iphoneos/stt_record.build/Objects-normal/arm64/stt_record-primary.swiftconstvalues",
+    "dependencies" : "/Users/kelvinsande/Documents/SandeTechnologies/legai/ios/build/Pods.build/Release-iphoneos/stt_record.build/Objects-normal/arm64/stt_record-primary.d",
+    "diagnostics" : "/Users/kelvinsande/Documents/SandeTechnologies/legai/ios/build/Pods.build/Release-iphoneos/stt_record.build/Objects-normal/arm64/stt_record-primary.dia",
+    "emit-module-dependencies" : "/Users/kelvinsande/Documents/SandeTechnologies/legai/ios/build/Pods.build/Release-iphoneos/stt_record.build/Objects-normal/arm64/stt_record-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/kelvinsande/Documents/SandeTechnologies/legai/ios/build/Pods.build/Release-iphoneos/stt_record.build/Objects-normal/arm64/stt_record-primary-emit-module.dia",
+    "pch" : "/Users/kelvinsande/Documents/SandeTechnologies/legai/ios/build/Pods.build/Release-iphoneos/stt_record.build/Objects-normal/arm64/stt_record-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/kelvinsande/Documents/SandeTechnologies/legai/ios/build/Pods.build/Release-iphoneos/stt_record.build/Objects-normal/arm64/stt_record-primary.swiftdeps"
+  },
+  "/Users/kelvinsande/.pub-cache/hosted/pub.dev/stt_record-0.0.8/ios/Classes/SttRecordPlugin.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/stt_record.build/Objects-normal/arm64/SttRecordPlugin.o",
+    "llvm-bc" : "/Users/kelvinsande/Documents/SandeTechnologies/legai/ios/build/Pods.build/Release-iphoneos/stt_record.build/Objects-normal/arm64/SttRecordPlugin.bc",
+    "object" : "/Users/kelvinsande/Documents/SandeTechnologies/legai/ios/build/Pods.build/Release-iphoneos/stt_record.build/Objects-normal/arm64/SttRecordPlugin.o"
+  }
+}
