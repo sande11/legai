@@ -42,8 +42,10 @@ class FakeCapture implements LiveCaptureRepository {
   bool paused = false;
   String? audioPath = '/tmp/legai-test.wav';
 
-  void say(String fullText, {bool isFinal = true}) =>
-      updatesController.add(CaptureUpdate(fullText, isFinal: isFinal));
+  void say(String fullText, {bool isFinal = true, String? speaker}) =>
+      updatesController.add(
+        CaptureUpdate(fullText, isFinal: isFinal, speaker: speaker),
+      );
 
   @override
   Stream<CaptureUpdate> get updates => updatesController.stream;

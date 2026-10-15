@@ -64,6 +64,9 @@ flutter:
   assets:
     - .env
     - assets/
+    # Presentation fakes: remove these two lines together with lib/fakes/.
+    - assets/fakes/
+    - assets/fakes/audio/
 
   fonts:
     - family: Manrope

@@ -65,7 +65,7 @@ SUPABASE_URL=...
 SUPABASE_ANON_KEY=...
 ```
 
-If either value is empty, the app runs in **guest mode**: no sign-in, everything local.
+If either value is empty, the app runs in **guest mode**: no sign-in, everything local. (While the presentation fakes are on, a simulated sign-in is used instead; see below.)
 
 ### Platform notes
 
@@ -75,6 +75,33 @@ If either value is empty, the app runs in **guest mode**: no sign-in, everything
   - Test speech features on a real device.
   - `stt_record` ships a CocoaPods podspec only, so Flutter will generate a Podfile if one is missing.
 - Whispered advice plays **only when earbuds or headphones are connected**, so it is never read out loud to the room.
+
+## Presentation fakes
+
+For demos, the app runs on **fakes** that make every feature work on any phone or simulator, with no microphone, speech engine or backend. They live in `lib/fakes/` and implement the same domain interfaces as the real data layer, so nothing outside `lib/app/di.dart` knows they exist.
+
+They are **on by default**. To use the real microphone, speech and sign-in:
+
+```bash
+flutter run --dart-define=LEGAI_FAKES=false
+```
+
+| Feature | What the fake does |
+| --- | --- |
+| Sign in / sign up | Any email and a password of 6+ characters works. The "account" is kept on the phone until you log out. |
+| Talk (voice chat) | Each time you tap the mic, a scripted question is "heard" word by word. Tap again to finish it early. Answers are read out with word-by-word captions (using the phone's voice when it has one). |
+| Listen In | Plays a recorded, scripted conversation for the topic you pick (Work, Police, Housing, Business deal, Client intake, Family), with speaker labels and live advice. The meter follows the real audio. Earbuds always count as connected, so advice is whispered. Ending saves a real recording you can play back in Review. |
+| Home and Sessions | Two sample recordings and two sample chats are added the first time the app runs. |
+
+Text chat, the advice rules and the knowledge base are the demo data layer and work the same with or without fakes.
+
+**To remove the fakes for good:**
+
+1. Delete `lib/fakes/`, `assets/fakes/` and `test/fakes/`.
+2. In `lib/app/di.dart`, delete the `fakes.dart` import and the "Presentation fakes" block at the end of `configureDependencies`.
+3. In `pubspec.yaml`, delete the two `assets/fakes/` lines.
+
+The scripted conversations are in `assets/fakes/scripts.json`, timed against the WAV files in `assets/fakes/audio/`. The audio was made with [Piper](https://github.com/rhasspy/piper) neural voices (en_GB alan, en_GB southern_english_female, en_US amy, en_US ryan). Check each voice's model card licence before shipping these files beyond demos.
 
 ## Connecting a real AI backend
 
@@ -94,6 +121,7 @@ flutter test
 The suite covers:
 
 - **Logic**: transcript assembly, the analyzer and knowledge base, WAV peak extraction, and the chat, live and settings blocs.
+- **Presentation fakes**: script timing and advice for every topic, the fake capture, speech and sign-in, the sample-history seeder, and a full Listen In run on fakes.
 - **Screens**: page tests for Listen In, plus a smoke test that renders every screen in both themes on a large and a small phone, and fails on any layout overflow.
 
 To write screenshots of every screen to `build/screens/`:
@@ -107,3 +135,4 @@ flutter test test/screens_smoke_test.dart --update-goldens --dart-define=LEGAI_S
 - `assets/fonts/`: Manrope and Newsreader (SIL Open Font License, see `OFL-*.txt`).
 - `assets/brand/`: logo mark and app icon as SVG.
 - `assets/icon/`: app icon PNGs for `flutter_launcher_icons`.
+- `assets/fakes/`: scripted conversations and their audio, used only by the presentation fakes.

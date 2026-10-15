@@ -365,14 +365,28 @@ class TranscriptLine extends StatelessWidget {
               width: 8,
               height: 8,
               decoration: BoxDecoration(
-                color: flagged ? c.gold : c.next,
+                color: flagged
+                    ? c.gold
+                    : (segment.speaker == 'You' ? c.text : c.next),
                 shape: BoxShape.circle,
               ),
             ),
             const SizedBox(width: 8),
+            if (segment.speaker != null) ...[
+              Text(
+                segment.speaker!,
+                style: context.text.labelSmall?.copyWith(color: c.muted),
+              ),
+              const SizedBox(width: 6),
+            ],
             Text(
               live ? 'now' : formatClock(segment.start),
-              style: context.text.labelSmall?.copyWith(color: c.muted),
+              style: context.text.labelSmall?.copyWith(
+                color: c.muted,
+                fontWeight: segment.speaker == null
+                    ? FontWeight.w700
+                    : FontWeight.w500,
+              ),
             ),
           ],
         ),

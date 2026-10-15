@@ -92,6 +92,7 @@ class TranscriptSegment extends Equatable {
     required this.text,
     required this.start,
     this.isFinal = false,
+    this.speaker,
   });
 
   final String id;
@@ -103,16 +104,20 @@ class TranscriptSegment extends Equatable {
   /// False while the recognizer may still change the words.
   final bool isFinal;
 
+  /// Speaker label, when the transcription source provides one.
+  final String? speaker;
+
   TranscriptSegment copyWith({String? text, bool? isFinal}) =>
       TranscriptSegment(
         id: id,
         text: text ?? this.text,
         start: start,
         isFinal: isFinal ?? this.isFinal,
+        speaker: speaker,
       );
 
   @override
-  List<Object?> get props => [id, text, start, isFinal];
+  List<Object?> get props => [id, text, start, isFinal, speaker];
 }
 
 /// What the conversation is about. Helps LegAI pick relevant advice.

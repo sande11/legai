@@ -35,6 +35,7 @@ import '../features/settings/data/repositories/settings_repository_impl.dart';
 import '../features/settings/domain/repositories/settings_repository.dart';
 import '../features/settings/domain/usecases/settings_usecases.dart';
 import '../features/settings/presentation/cubit/settings_cubit.dart';
+import '../fakes/fakes.dart'; // Presentation fakes: delete with lib/fakes/.
 
 /// The service locator. Only the composition root (this file, the router and
 /// main.dart) reads from it; everything else gets dependencies through
@@ -136,4 +137,9 @@ Future<void> configureDependencies({required bool backendConfigured}) async {
 
   // Home ----------------------------------------------------------------------------
   sl.registerLazySingleton(() => GetRecentActivity(sl(), sl()));
+
+  // Presentation fakes --------------------------------------------------------
+  // Swaps in simulated sign-in, speech and Listen In (see lib/fakes/fakes.dart).
+  // Delete this block, the import above and lib/fakes/ to remove them.
+  if (kPresentationFakes) await installPresentationFakes(sl);
 }

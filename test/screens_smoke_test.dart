@@ -183,16 +183,20 @@ void main() {
           rig.capture
             ..say(
               'We\'ve gone through last month\'s stock count, and the numbers don\'t add up.',
+              speaker: 'Manager',
             )
             ..say(
               'We\'ve gone through last month\'s stock count, and the numbers don\'t add up. I raised that in my report on the 3rd.',
+              speaker: 'Manager',
             )
             ..say(
               'We\'ve gone through last month\'s stock count, and the numbers don\'t add up. I raised that in my report on the 3rd. Given all that, we think it\'s best you resign today. If you sign this letter now, we\'ll keep it quiet.',
+              speaker: 'Manager',
             )
             ..say(
               'We\'ve gone through last month\'s stock count, and the numbers don\'t add up. I raised that in my report on the 3rd. Given all that, we think it\'s best you resign today. If you sign this letter now, we\'ll keep it quiet. HR needs it signed before you leave',
               isFinal: false,
+              speaker: 'Manager',
             );
           for (var i = 0; i < 30; i++) {
             await tester.pump(const Duration(milliseconds: 130));

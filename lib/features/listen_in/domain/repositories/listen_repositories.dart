@@ -4,7 +4,7 @@ import '../entities/listen_entities.dart';
 
 /// The recognizer's running transcript of the whole session so far.
 class CaptureUpdate extends Equatable {
-  const CaptureUpdate(this.fullText, {required this.isFinal});
+  const CaptureUpdate(this.fullText, {required this.isFinal, this.speaker});
 
   /// Everything heard since the session started.
   final String fullText;
@@ -12,8 +12,12 @@ class CaptureUpdate extends Equatable {
   /// True when the recognizer has committed the latest words.
   final bool isFinal;
 
+  /// Who is speaking, when the source can tell (on-device recognizers
+  /// can't; a diarizing cloud service can).
+  final String? speaker;
+
   @override
-  List<Object?> get props => [fullText, isFinal];
+  List<Object?> get props => [fullText, isFinal, speaker];
 }
 
 /// Records audio to a file and transcribes it at the same time, from one

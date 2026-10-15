@@ -46,6 +46,7 @@ class TranscriptAssembler {
       text: tail,
       start: _openStart!,
       isFinal: isFinal,
+      speaker: update.speaker,
     );
 
     if (isFinal) {

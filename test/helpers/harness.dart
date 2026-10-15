@@ -105,6 +105,7 @@ class TestRig {
           'Given all that, we think it\'s best you resign today. If you sign this letter now, we\'ll keep it quiet.',
       start: Duration(minutes: 12, seconds: 36),
       isFinal: true,
+      speaker: 'Manager',
     );
     const seg0 = TranscriptSegment(
       id: 's0',
@@ -112,6 +113,7 @@ class TestRig {
           'We have already decided, so there\'s no need to go through your side.',
       start: Duration(minutes: 4, seconds: 12),
       isFinal: true,
+      speaker: 'Manager',
     );
     const ctx = AnalysisContext(
       topic: ConversationTopic.work,

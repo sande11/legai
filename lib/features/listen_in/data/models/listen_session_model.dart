@@ -19,6 +19,7 @@ abstract final class ListenSessionModel {
           'text': g.text,
           'startMs': g.start.inMilliseconds,
           'final': g.isFinal,
+          if (g.speaker != null) 'speaker': g.speaker,
         },
     ],
     'flags': [
@@ -59,6 +60,7 @@ abstract final class ListenSessionModel {
         text: (g['text'] as String?) ?? '',
         start: Duration(milliseconds: (g['startMs'] as num?)?.toInt() ?? 0),
         isFinal: (g['final'] as bool?) ?? true,
+        speaker: g['speaker'] as String?,
       );
     }).toList(),
     flags: ((j['flags'] as List?) ?? const []).cast<Map>().map((f) {

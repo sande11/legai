@@ -1,0 +1,284 @@
+{
+ "work": {
+  "title": "HR meeting",
+  "audio": "assets/fakes/audio/work.wav",
+  "durationMs": 47848,
+  "lines": [
+   {
+    "speaker": "Manager",
+    "text": "Thanks for coming in. We wanted to talk about last month's stock count.",
+    "startMs": 1600,
+    "endMs": 5885
+   },
+   {
+    "speaker": "Manager",
+    "text": "We've gone through the numbers, and they don't add up.",
+    "startMs": 6385,
+    "endMs": 9532
+   },
+   {
+    "speaker": "You",
+    "text": "I raised that in my report on the third. The delivery records were wrong.",
+    "startMs": 10432,
+    "endMs": 15401
+   },
+   {
+    "speaker": "Manager",
+    "text": "We've already decided, so there's no need to go through your side.",
+    "startMs": 16301,
+    "endMs": 20283
+   },
+   {
+    "speaker": "You",
+    "text": "Can I at least see what the count found?",
+    "startMs": 21183,
+    "endMs": 23720
+   },
+   {
+    "speaker": "Manager",
+    "text": "The report is internal, we can't share it.",
+    "startMs": 24620,
+    "endMs": 27367
+   },
+   {
+    "speaker": "Manager",
+    "text": "Given all that, we think it's best you resign today. If you sign this letter now, we'll keep it quiet.",
+    "startMs": 27867,
+    "endMs": 34642
+   },
+   {
+    "speaker": "You",
+    "text": "I'd like a copy of the letter, and some time to get advice.",
+    "startMs": 35542,
+    "endMs": 39438
+   },
+   {
+    "speaker": "Manager",
+    "text": "HR needs it signed before you leave.",
+    "startMs": 40338,
+    "endMs": 42948
+   },
+   {
+    "speaker": "You",
+    "text": "Then please put the reasons in writing.",
+    "startMs": 43848,
+    "endMs": 46348
+   }
+  ]
+ },
+ "police": {
+  "title": "Police stop",
+  "audio": "assets/fakes/audio/police.wav",
+  "durationMs": 25882,
+  "lines": [
+   {
+    "speaker": "Officer",
+    "text": "Good afternoon. We'd like you to come to the station to answer a few questions.",
+    "startMs": 1600,
+    "endMs": 5036
+   },
+   {
+    "speaker": "You",
+    "text": "Am I under arrest?",
+    "startMs": 5936,
+    "endMs": 7396
+   },
+   {
+    "speaker": "Officer",
+    "text": "Not at the moment. We just need you to make a statement about Saturday night.",
+    "startMs": 8296,
+    "endMs": 11512
+   },
+   {
+    "speaker": "You",
+    "text": "I'd like to speak to a lawyer first.",
+    "startMs": 12412,
+    "endMs": 14977
+   },
+   {
+    "speaker": "Officer",
+    "text": "We'll also need to search your car before you go.",
+    "startMs": 15877,
+    "endMs": 18013
+   },
+   {
+    "speaker": "You",
+    "text": "Do you have a warrant for that?",
+    "startMs": 18913,
+    "endMs": 20475
+   },
+   {
+    "speaker": "Officer",
+    "text": "We can sort that out later. It's easier if you just cooperate.",
+    "startMs": 21375,
+    "endMs": 24382
+   }
+  ]
+ },
+ "housing": {
+  "title": "Landlord call",
+  "audio": "assets/fakes/audio/housing.wav",
+  "durationMs": 28003,
+  "lines": [
+   {
+    "speaker": "Landlord",
+    "text": "I've looked at the flat, and I'm keeping your deposit.",
+    "startMs": 1600,
+    "endMs": 5045
+   },
+   {
+    "speaker": "You",
+    "text": "The damage was there when I moved in. I have photos.",
+    "startMs": 5945,
+    "endMs": 9734
+   },
+   {
+    "speaker": "Landlord",
+    "text": "It's wear and tear either way, so the deposit covers it.",
+    "startMs": 10634,
+    "endMs": 14110
+   },
+   {
+    "speaker": "Landlord",
+    "text": "And the new tenants arrive soon, so you need to move out by Friday.",
+    "startMs": 14610,
+    "endMs": 19004
+   },
+   {
+    "speaker": "You",
+    "text": "Can I have that in writing, with the reasons?",
+    "startMs": 19904,
+    "endMs": 22647
+   },
+   {
+    "speaker": "Landlord",
+    "text": "If you're not out by then, I'll change the locks.",
+    "startMs": 23547,
+    "endMs": 26503
+   }
+  ]
+ },
+ "businessDeal": {
+  "title": "Supplier call",
+  "audio": "assets/fakes/audio/businessDeal.wav",
+  "durationMs": 25200,
+  "lines": [
+   {
+    "speaker": "Client",
+    "text": "We're happy with the delivery, but we can only pay at the end of the quarter.",
+    "startMs": 1600,
+    "endMs": 5291
+   },
+   {
+    "speaker": "You",
+    "text": "Our invoice says thirty days.",
+    "startMs": 6191,
+    "endMs": 8343
+   },
+   {
+    "speaker": "Client",
+    "text": "Let's keep it simple. We don't need a contract for this one, a handshake is fine.",
+    "startMs": 9243,
+    "endMs": 12947
+   },
+   {
+    "speaker": "You",
+    "text": "I'd prefer to confirm the terms by email.",
+    "startMs": 13847,
+    "endMs": 16542
+   },
+   {
+    "speaker": "Client",
+    "text": "Fine. But we'd also want you to waive any late payment claims.",
+    "startMs": 17442,
+    "endMs": 20693
+   },
+   {
+    "speaker": "You",
+    "text": "I'll need to think about that.",
+    "startMs": 21593,
+    "endMs": 23700
+   }
+  ]
+ },
+ "clientIntake": {
+  "title": "Client intake",
+  "audio": "assets/fakes/audio/clientIntake.wav",
+  "durationMs": 23407,
+  "lines": [
+   {
+    "speaker": "Client",
+    "text": "My employer dismissed me about three months ago.",
+    "startMs": 1600,
+    "endMs": 4203
+   },
+   {
+    "speaker": "You",
+    "text": "Were you given a hearing before the decision?",
+    "startMs": 5103,
+    "endMs": 6752
+   },
+   {
+    "speaker": "Client",
+    "text": "No. They said they had already decided, so there was no need to hear my side.",
+    "startMs": 7652,
+    "endMs": 12138
+   },
+   {
+    "speaker": "Client",
+    "text": "They also cut my salary before that, without asking me.",
+    "startMs": 12638,
+    "endMs": 15397
+   },
+   {
+    "speaker": "You",
+    "text": "Did you sign anything when you left?",
+    "startMs": 16297,
+    "endMs": 17644
+   },
+   {
+    "speaker": "Client",
+    "text": "They wanted me to sign a letter to drop my claims, but I didn't.",
+    "startMs": 18544,
+    "endMs": 21907
+   }
+  ]
+ },
+ "family": {
+  "title": "Family meeting",
+  "audio": "assets/fakes/audio/family.wav",
+  "durationMs": 23858,
+  "lines": [
+   {
+    "speaker": "Relative",
+    "text": "Now that your father has passed, the family has decided the house goes to your uncle.",
+    "startMs": 1600,
+    "endMs": 6682
+   },
+   {
+    "speaker": "You",
+    "text": "Was there a will?",
+    "startMs": 7582,
+    "endMs": 8659
+   },
+   {
+    "speaker": "Relative",
+    "text": "There's no need to discuss it. Just sign this paper today so we can transfer it.",
+    "startMs": 9559,
+    "endMs": 15051
+   },
+   {
+    "speaker": "You",
+    "text": "I'd like a copy, and some time to read it.",
+    "startMs": 15951,
+    "endMs": 18645
+   },
+   {
+    "speaker": "Relative",
+    "text": "You'll have to move out by the end of the month.",
+    "startMs": 19545,
+    "endMs": 22358
+   }
+  ]
+ }
+}

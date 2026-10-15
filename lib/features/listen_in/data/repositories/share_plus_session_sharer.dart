@@ -59,7 +59,8 @@ class SharePlusSessionSharer implements SessionSharer {
     }
     b.writeln('Transcript');
     for (final g in s.segments) {
-      b.writeln('[${formatClock(g.start)}] ${g.text}');
+      final who = g.speaker == null ? '' : '${g.speaker}: ';
+      b.writeln('[${formatClock(g.start)}] $who${g.text}');
     }
     b
       ..writeln()

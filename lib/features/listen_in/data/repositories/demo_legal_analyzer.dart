@@ -42,7 +42,7 @@ class DemoLegalAnalyzer implements LegalAnalysisRepository {
       body:
           'Before being dismissed over conduct or performance, you should be given a chance to answer the allegations.',
       malawiCitation: 'Employment Act, s. 57',
-      topics: {ConversationTopic.work},
+      topics: {ConversationTopic.work, ConversationTopic.clientIntake},
     ),
     AdviceRule(
       key: 'dismissal',
@@ -124,7 +124,7 @@ class DemoLegalAnalyzer implements LegalAnalysisRepository {
       title: 'Ask for the notice in writing.',
       body:
           'Eviction usually needs proper notice. Ask for it in writing, with the date and the reason.',
-      topics: {ConversationTopic.housing},
+      topics: {ConversationTopic.housing, ConversationTopic.family},
     ),
     AdviceRule(
       key: 'late_payment',
@@ -143,6 +143,16 @@ class DemoLegalAnalyzer implements LegalAnalysisRepository {
       title: 'Put the agreement in writing.',
       body:
           'Verbal agreements can be binding but are hard to prove. Confirm the key terms in writing.',
+    ),
+    AdviceRule(
+      key: 'inheritance',
+      kind: AdviceKind.rights,
+      pattern:
+          r'\b(has passed|passed away|died|the will|a will|estate|inheritance)\b',
+      title: 'Ask about the will and the estate.',
+      body:
+          'Ask whether there is a will and who is handling the estate before you agree to anything about the property.',
+      topics: {ConversationTopic.family},
     ),
     AdviceRule(
       key: 'time_limits',
